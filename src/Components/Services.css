@@ -1,0 +1,145 @@
+
+.container2{
+    background-image: url('../Images/img4.jpg');
+    background-size: 100% 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.navbar{
+    position: relative !important   ;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: red;
+    margin: 2% 0%;
+}
+
+.services{
+    width: 90%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.service{
+    margin: 20px;
+    list-style-type: none;
+    width: 350px;
+}
+
+.service-img{
+    height: 350px;
+    width: 350px;
+}
+
+
+.name{
+    color: red;
+    margin-top: 15px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.details{
+    color: white;
+    margin-top: 5px;
+    text-align:justify;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:770px){
+
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 3rem !important;
+        border-bottom: 2px solid white;
+    }
+
+    .service{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        list-style-type: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    img{
+        height: 330px !important;
+        width: 330px !important;
+    }
+
+    .name{
+        margin-top: 5px auto !important;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 2rem !important;
+        border-bottom: 2px solid white;
+    }
+
+    .service{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        list-style-type: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    img{
+        height: 250px !important;
+        width: 250px !important;
+    }
+
+    .name{
+        margin-top: 5px auto !important;
+        text-align: center;
+        font-size: 2rem;
+    }
+}

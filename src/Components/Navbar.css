@@ -1,0 +1,245 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    /* background-color: rgb(14, 14, 14); */
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    /* margin-left: 4rem; */
+    width: 100%;
+    max-width: 1500px;
+}
+
+.navbar-logo{
+    color:#fff;
+    justify-self: start;
+    margin-left: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.fa-dumbbell{
+    margin-left: 10px;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 25px;
+    list-style: none;
+    width: 60vw;
+    justify-content: right;
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.nav-item{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin:0px 4px;
+}
+
+.nav-links{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+}
+
+.nav-links:hover{
+    border-bottom:2px solid white;
+    transition:  0.1s ease-in-out;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:960px){
+
+    .NavbarItems{
+        position: relative;
+    }
+    
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 92px;
+        width: 100%;
+    }
+
+    .navbar-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-logo{
+         position: absolute; 
+         left: 0;
+         margin-left: 5rem;
+         font-size: 2rem;
+    }
+
+    .menu-icon{
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 65vh;
+        position: absolute;
+        top:100px;
+        left:-120%;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu.active{
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        margin-left: 0; 
+    }
+
+    .nav-item{
+        height: 45px;
+        display: flex;
+        align-items: center;
+        margin:5px;
+        /* padding: 10px; */
+    }
+    
+    .nav-links{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        display: table;
+        overflow: hidden;
+        margin:0;
+    }
+
+    .nav-links:hover{
+        transform: scale(1.01);
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (max-width:550px)
+{
+    .NavbarItems{
+        position: relative;
+    }
+    
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+
+    .navbar-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-logo{
+         position: absolute; 
+         left: 0;
+         margin-left: 25px;
+         font-size: 1.4rem;
+    }
+
+    .menu-icon{
+        color: white;
+        display: block;
+        position: absolute;
+        /* top: 0; */
+        right: 0;
+        margin-right: 2rem;
+        /* transform: translate(-100%,60%); */
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 65vh;
+        position: absolute;
+        top:100px;
+        left:-120%;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    .nav-item{
+        height: 45px;
+        display: flex;
+        align-items: center;
+        margin:5px;
+        /* padding: 10px; */
+    }
+    
+    .nav-menu.active{
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        display: table;
+        overflow: hidden;
+        margin:0;
+    }
+
+    .nav-links:hover{
+        transform: scale(1.01);
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 15px;
+    }
+
+}
+
